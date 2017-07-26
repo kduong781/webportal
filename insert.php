@@ -7,6 +7,7 @@ if($_SESSION['username'] || isset($_COOKIE["logged"])) {
   $url = $_POST["url"]; // Gets URL from navbar input
   $database->query('INSERT INTO Images (url) VALUES (:url)');
   $database->bind(':url', $url);
+
   $database->execute();
   header('Location: paint.php');
 } else {

@@ -22,7 +22,7 @@
 
 <!-- Form-->
   <div class="container">
-    <form class="form-horizontal" action="form.php" method="post">
+    <form class="form-horizontal" action="validate.php" method="post">
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Username:</label>
         <div class="col-sm-10">

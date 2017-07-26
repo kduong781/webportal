@@ -40,7 +40,7 @@
         <div class="col-sm-10">
           <input type="password" name="mypass2" class="form-control" id="pwd2" placeholder="Enter password..">
         </div>
-      </div>
+      </div>      <div class="form-group">        <label class="control-label col-sm-2" for="pwd">US Based:</label>        <div class="col-sm-10">          <label class="radio-inline"><input type="radio" name="usBool" value="yes">Yes</label>          <label class="radio-inline"><input type="radio" name="usBool" value="no">No</label>        </div>      </div>
 
 
       <div class="form-group">

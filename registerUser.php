@@ -7,10 +7,12 @@ if($_SESSION['username'] || isset($_COOKIE["logged"])) {
   include "data.class.php";
   $database = new Database();
   $user = $_POST["myuser"]; // Gets URL from navbar input
-  $pass = $_POST["mypass"];
-  $database->query('INSERT INTO Users (userName, password) VALUES (:user, :pass)');
+  $pass = $_POST["mypass"];  $usBool = $_POST["usBool"];  if($usBool)
+  $database->query('INSERT INTO Users (userName, password, international) VALUES (:user, :pass, :bool)');
   $database->bind(':user', $user);
   $database->bind(':pass', $pass);
+  $database->bind(':bool', $usBool);
+
   $database->execute();
   header('Location: index.php');
 }

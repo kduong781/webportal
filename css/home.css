@@ -3,8 +3,7 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-
-
+
 .inner-logo img{
   max-width: 200px;
   max-height: 50px;
@@ -14,7 +13,17 @@
 input {
   margin-bottom: 10px;
 }
-
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding-top: 8px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
 h2 {
   background-color: rgb(91,167,28);
   text-align: center;
@@ -28,7 +37,7 @@ textarea {
      box-sizing: border-box;         /* Opera/IE 8+ */
      resize: none;
 }
-
+
 footer {
   text-align: center;
   border-color: #e7e7e7;
@@ -44,7 +53,7 @@ footer {
   padding-bottom: 10px;
 
 }
-
+.button1 {  background-color: rgb(66,85,99);  color: white;}.button1:hover {    background-color: rgb(88,166,24); }
 .center {
   margin: auto 0;
   text-align: center;
